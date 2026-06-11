@@ -1,199 +1,570 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인프라 테크 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>발산 마사지 링크 | 진짜 근육을 풀어주는 단 하나의 방법</title>
+    <meta name="description" content="발산 마사지 링크. 가짜 릴렉스는 그만. 근육이 말하는 진짜 소리를 들어라. 010-6279-0862 직통 예약.">
+    <meta name="keywords" content="발산 마사지, 발산 마사지 링크, 발산 스웨디시, 발산 근육 마사지, 발산 맛집 마사지, 발산역 마사지">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <link rel="canonical" href="https://t3b07-bs-massage-link-2.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="발산 마사지 링크 | 진짜 근육을 풀어주는 단 하나의 방법">
+    <meta property="og:description" content="발산 마사지 링크. 가짜 릴렉스는 그만. 근육이 말하는 진짜 소리를 들어라. 010-6279-0862 직통 예약.">
+    <meta property="og:url" content="https://t3b07-bs-massage-link-2.vercel.app/">
+    <meta property="og:site_name" content="발산 마사지 링크">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="발산 마사지 링크 | 진짜 근육을 풀어주는 단 하나의 방법">
+    <meta name="twitter:description" content="발산 마사지 링크. 가짜 릴렉스는 그만. 근육이 말하는 진짜 소리를 들어라. 010-6279-0862 직통 예약.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HealthAndBeautyBusiness",
+        "name": "발산 마사지 링크",
+        "description": "발산 지역 최고의 근육 마사지 전문점. 가짜 릴렉스는 그만, 진짜 근육 해결.",
+        "telephone": "010-6279-0862",
+        "url": "https://t3b07-bs-massage-link-2.vercel.app/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "발산",
+            "addressRegion": "서울특별시",
+            "addressCountry": "KR"
+        },
+        "priceRange": "₩₩",
+        "areaServed": "발산, 마곡, 김포공항",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "마사지 서비스",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "스웨디시 마사지" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "타이 마사지" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "근육 이완 마사지" } }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "147",
+            "bestRating": "5"
+        }
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+    <style>
+        /* === RESET & BASE === */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fcf8f2;
+            color: #2e2522;
+            line-height: 1.5;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: #2e2522; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s ease; }
+        a:hover { border-bottom-color: #7f5539; }
+        img { max-width: 100%; display: block; }
+        ul { list-style: none; }
+
+        /* === CONTAINER === */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* === TYPOGRAPHY === */
+        h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
+        h1 { font-size: 2.5rem; margin-bottom: 16px; }
+        h2 { font-size: 1.75rem; margin-bottom: 16px; border-bottom: 2px solid #2e2522; padding-bottom: 8px; display: inline-block; }
+        h3 { font-size: 1.25rem; margin-bottom: 8px; }
+        p { margin-bottom: 16px; max-width: 70ch; }
+        .text-accent { color: #7f5539; }
+        .text-small { font-size: 0.875rem; }
+        .text-muted { opacity: 0.7; }
+
+        /* === HEADER / NAV === */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #fcf8f2;
+            border-bottom: 2px solid #2e2522;
+            padding: 16px 0;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            border: none;
+        }
+        .logo:hover { border-bottom: none; }
+        .logo span { color: #7f5539; }
+        .nav-links { display: flex; gap: 24px; align-items: center; }
+        .nav-links a { font-weight: 600; font-size: 0.95rem; border-bottom: 2px solid transparent; padding-bottom: 4px; }
+        .nav-links a:hover { border-bottom-color: #7f5539; }
+        .nav-cta {
+            background: #2e2522;
+            color: #fcf8f2 !important;
+            padding: 8px 16px;
+            border-radius: 0;
+            border: 2px solid #2e2522;
+            font-weight: 700;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        .nav-cta:hover {
+            background: #fcf8f2;
+            color: #2e2522 !important;
+            border-color: #2e2522;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background: #2e2522;
+            display: block;
+            transition: 0.2s;
+        }
+
+        /* === HERO === */
+        .hero {
+            padding: 80px 0 64px;
+            border-bottom: 2px solid #2e2522;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-visual {
+            background: #2e2522;
+            aspect-ratio: 4 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #2e2522;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-visual::after {
+            content: '☯';
+            font-size: 6rem;
+            color: #fcf8f2;
+            opacity: 0.15;
+            position: absolute;
+        }
+        .hero-visual-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            width: 80%;
+            height: 80%;
+        }
+        .hero-visual-grid div {
+            background: #7f5539;
+            opacity: 0.6;
+        }
+        .hero-visual-grid div:nth-child(2) { background: #fcf8f2; opacity: 0.2; }
+        .hero-visual-grid div:nth-child(3) { background: #fcf8f2; opacity: 0.2; }
+        .hero-visual-grid div:nth-child(4) { background: #7f5539; opacity: 0.6; }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 16px; }
+        .hero p { font-size: 1.1rem; margin-bottom: 24px; }
+        .hero-cta {
+            display: inline-block;
+            background: #2e2522;
+            color: #fcf8f2;
+            padding: 12px 32px;
+            font-weight: 700;
+            border: 2px solid #2e2522;
+            transition: background 0.15s ease, color 0.15s ease;
+            font-size: 1rem;
+        }
+        .hero-cta:hover {
+            background: #fcf8f2;
+            color: #2e2522;
+        }
+
+        /* === SECTIONS === */
+        section { padding: 40px 0; }
+        .section-divider { border-top: 1px solid #2e2522; margin: 0; }
+
+        /* === CARDS GRID === */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 24px;
+        }
+        .card {
+            background: #fcf8f2;
+            border: 2px solid #2e2522;
+            padding: 24px;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 0 0 #2e2522;
+        }
+        .card-icon { font-size: 2rem; margin-bottom: 12px; display: block; }
+        .card h3 { margin-bottom: 8px; }
+        .card p { font-size: 0.95rem; margin-bottom: 0; }
+
+        /* === REVIEWS === */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 24px;
+        }
+        .review-card {
+            border: 2px solid #2e2522;
+            padding: 24px;
+            background: #fcf8f2;
+            transition: transform 0.15s ease;
+        }
+        .review-card:hover { transform: translateY(-2px); }
+        .review-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+        }
+        .review-name { font-weight: 700; }
+        .review-date { opacity: 0.6; }
+        .review-stars { color: #7f5539; letter-spacing: 2px; margin-bottom: 8px; font-size: 1.1rem; }
+        .review-text { font-size: 0.95rem; line-height: 1.6; }
+
+        /* === ABOUT / FEATURES === */
+        .feature-list { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+        .feature-item { border: 1px solid #2e2522; padding: 16px; display: flex; align-items: flex-start; gap: 12px; }
+        .feature-item span:first-child { font-size: 1.5rem; }
+
+        /* === CONTACT / CTA === */
+        .contact-block {
+            background: #2e2522;
+            color: #fcf8f2;
+            padding: 40px;
+            border: 2px solid #2e2522;
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        .contact-block h3 { color: #fcf8f2; border-bottom: 2px solid #7f5539; padding-bottom: 4px; display: inline-block; }
+        .contact-block a { color: #fcf8f2; border-bottom-color: #7f5539; }
+        .contact-block a:hover { border-bottom-color: #fcf8f2; }
+        .contact-phone {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            border-bottom: 2px solid transparent;
+        }
+        .contact-phone:hover { border-bottom-color: #7f5539; }
+
+        /* === FOOTER === */
+        footer {
+            border-top: 2px solid #2e2522;
+            padding: 32px 0 24px;
+            margin-top: 40px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 24px;
+        }
+        .footer-grid a { font-size: 0.9rem; }
+        .copyright { margin-top: 24px; padding-top: 16px; border-top: 1px solid rgba(46,37,34,0.2); font-size: 0.85rem; text-align: center; opacity: 0.7; }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            .container { padding: 0 16px; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.4rem; }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #fcf8f2;
+                border-bottom: 2px solid #2e2522;
+                padding: 16px 24px;
+                gap: 16px;
+                align-items: flex-start;
+            }
+            .nav-links.open { display: flex; }
+            .hamburger { display: flex; }
+            .nav-cta { width: 100%; text-align: center; }
+
+            .hero-grid { grid-template-columns: 1fr; gap: 24px; }
+            .hero-visual { aspect-ratio: 16/9; }
+            .hero h1 { font-size: 2.2rem; }
+
+            .card-grid { grid-template-columns: 1fr; }
+            .review-grid { grid-template-columns: 1fr; }
+            .feature-list { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .contact-block { flex-direction: column; text-align: center; }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>인프라 테크 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인프라 테크</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h3>
-          <p>새로 웜업을 진행하는 도메인의 수신율과 보안 도달 평판을 극대화하기 위해, SPF와 DKIM 인증 결과 기반의 DMARC 규약을 초기 단순 모니터링 수준에서 메일 수신 서버들이 미...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h3>
-          <p>한정된 자원으로 초경량 고성능 웹 서버를 운영할 때, 실시간 커널 로그가 무제한 적재되어 디스크 공간 부족으로 전체 프로세스가 락되는 파멸적 재앙을 미연에 방지하기 위해 `/etc...</p>
-        </a>
-      
+<header>
+    <div class="container header-inner">
+        <a href="/" class="logo">마사지<span>링크</span></a>
+        <button class="hamburger" aria-label="메뉴 열기" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('open');">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links">
+            <a href="#services">서비스</a>
+            <a href="#reviews">리뷰</a>
+            <a href="#about">철학</a>
+            <a href="#contact" class="nav-cta">예약 직통</a>
+        </nav>
+    </div>
+</header>
 
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h3>
-          <p>원거리 대용량 데이터 전송 성능을 극대화하는 TCP 윈도우 스케일 팩터 옵션을 커널 수준에서 적용했을 때, 도중에 위치한 오래된 하드웨어 방화벽들이 이를 비정상 버스트 트래픽으로 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>네트워크 인프라 엔지니어를 위한 화곡 셔츠룸 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>네트워크 인프라 엔지니어를 위한 화곡 셔츠룸 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
+<main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div>
+                <h1>근육이<br>말하게 <span class="text-accent">하라</span></h1>
+                <p>발산 마사지 링크. 우리는 가짜 릴렉스를 팔지 않는다. 당신의 근육은 거짓말하지 않는다. 진짜 통증의 근원을 찾고, 압박하고, 풀어낸다. 부드러운 손길은 여기 없다. 필요한 건 정확한 압력과 신뢰다.</p>
+                <a href="tel:010-6279-0862" class="hero-cta">☎ 010-6279-0862 지금 전화</a>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-visual-grid">
+                    <div></div><div></div>
+                    <div></div><div></div>
+                </div>
+            </div>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section-divider">
+        <div class="container">
+            <h2>우리가 <span class="text-accent">깨부수는</span> 것들</h2>
+            <p>스웨디시? 타이? 딥티슈? 이름은 중요하지 않다. 중요한 건 당신 몸이 반응하는가다. 우리는 세 가지 원칙으로 움직인다.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <span class="card-icon">🔥</span>
+                    <h3>딥 릴리즈</h3>
+                    <p>표면을 긁지 않는다. 근막까지 도달하는 압력. 당신이 참았던 긴장이 녹아내리는 순간을 경험해라.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">⚡</span>
+                    <h3>스포츠 마사지</h3>
+                    <p>운동 전후, 혹은 삶이라는 운동장에서 지친 당신. 근육의 피로와 젖산을 강제 배출시킨다.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🌀</span>
+                    <h3>스웨디시 리프레시</h3>
+                    <p>부드러움 속에 단단함이 있다. 진정한 릴렉스는 긴장이 해제될 때 온다. 우리 방식의 스웨디시.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section-divider">
+        <div class="container">
+            <h2>입이 <span class="text-accent">근질거리는</span> 후기</h2>
+            <p>가짜 후기는 없다. 진짜 발산 사람들의 목소리다.</p>
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span class="review-name">김** (발산동)</span>
+                        <span class="review-date">2024.11.02</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"다른 데서 받은 건 그냥 기름 바르고 문지르기였어요. 여기는 진짜 근육을 파고드니까 시원하면서도 아팠는데, 끝나고 나니까 몸이 가벼워서 놀랐어요. 다음날 몸이 개운한 게 차원이 다릅니다."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span class="review-name">박** (마곡)</span>
+                        <span class="review-date">2024.10.28</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"회사 스트레스로 어깨가 돌덩이였는데, 한 번에 확 풀렸어요. 손이 정말 예리하세요. '아픈 건 치료다'라는 말이 이해됐습니다. 앞으로 단골할게요."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span class="review-name">이** (방화)</span>
+                        <span class="review-date">2024.10.15</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"처음에 '무례하게 아프다'고 생각했어요. 그런데 끝나고 나니까 그동안 내가 근육을 얼마나 방치했는지 깨달았어요. 진짜 프로의 손길이에요. 추천합니다."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span class="review-name">최** (발산역)</span>
+                        <span class="review-date">2024.10.08</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"헬스하고 회복이 너무 안 돼서 갔는데, 완전히 다른 세상을 경험했어요. 근육이 제대로 풀리니까 운동 퍼포먼스도 올라갔어요. 강추!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span class="review-name">정** (내발산)</span>
+                        <span class="review-date">2024.09.30</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"발산에서 마사지 여러 군데 가봤는데, 여기가 진짜예요. 거품 없는 시술, 정확한 압. 돈 아깝지 않습니다. 앞으로 여기만 갈 거예요."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / FEATURES -->
+    <section id="about" class="section-divider">
+        <div class="container">
+            <h2>왜 <span class="text-accent">링크</span>인가</h2>
+            <p>우리는 '마사지'라는 산업이 너무 부드러워졌다고 생각한다. 진짜 통증을 겪는 사람에게 '힐링'타령은 사치다. 우리는 당신의 근육과 직접 대화한다. 링크는 연결이다. 당신의 몸과 해결책을 연결한다.</p>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <span>🔗</span>
+                    <div><strong>정확한 진단</strong><br>눈으로 보고, 손으로 느끼고, 근육의 소리를 듣는다.</div>
+                </div>
+                <div class="feature-item">
+                    <span>💪</span>
+                    <div><strong>강한 압력</strong><br>약한 손길은 약이다. 강한 손길은 치료다. 우리는 치료한다.</div>
+                </div>
+                <div class="feature-item">
+                    <span>⏳</span>
+                    <div><strong>시간 낭비 금지</strong><br>30분이면 충분하다. 핵심만 집중 공략.</div>
+                </div>
+                <div class="feature-item">
+                    <span>📍</span>
+                    <div><strong>발산 직영</strong><br>발산에서 가장 강력한 손. 지역민이 인정했다.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-divider">
+        <div class="container">
+            <h2>지금 <span class="text-accent">연결하라</span></h2>
+            <p>예약은 간단하다. 전화 한 통. 상담은 없다. '아프다'고 말하면 우리가 안다. 발산 마사지 링크는 가짜를 거부한다.</p>
+            <div class="contact-block">
+                <div>
+                    <h3>🔴 직통 전화</h3>
+                    <p style="color:#fcf8f2; margin-bottom:0;">24시간 예약 가능. 문자도 OK.</p>
+                </div>
+                <a href="tel:010-6279-0862" class="contact-phone">010-6279-0862</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 화곡 셔츠룸 트러블슈팅 기술 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
       </div>
-    </footer>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 화곡 셔츠룸 트러블슈팅 기술 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-11">2026-06-11</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">발산 마사지 링크 처음 알아볼 때 실제로 많이 묻는 질문 5가지</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 DNA 1bd07a49 **제목: 창작한 제목:** "오답 로고, 오류코드 변천: 아식스 젤 카야노 14 OG 리스탁에서의 진실" 아, 진짜... 이번에 달라진 인솔 로고 프린트가 왜인지 몰랐습니다. 스니커즈 커스텀 작가로서, 오류코드 변천과 그로 인한 </p>
+      </div>
+      <a href="posts/qa-001-a1gg5n.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <strong>발산 마사지 링크</strong><br>
+                <span class="text-small text-muted">진짜 근육을 풀어주는 유일한 연결.</span>
+            </div>
+            <div>
+                <strong>바로가기</strong><
 </body>
 </html>
